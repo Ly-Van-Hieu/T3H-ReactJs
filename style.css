@@ -1,5 +1,12 @@
-div {
-    height: 100px;
-    width: 100px;
-    background-color: blue;
+.title {
+    text-align: center;
+    font-weight: bold;
+}
+
+.color {
+    background-color: #f9faff;
+}
+
+table tr td {
+    padding: 5px 10px 10px 10px;
 }
