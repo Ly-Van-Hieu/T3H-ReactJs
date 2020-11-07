@@ -1,0 +1,17 @@
+.table {
+    margin: 50px 100px;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+table,
+tr,
+td {
+    border: 2px solid black;
+}
+
+div {
+    height: 50px;
+}
