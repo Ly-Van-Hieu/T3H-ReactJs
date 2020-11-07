@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- code table -->
+    <div class="table">
+        <span>Bài Tập Table</span>
+        <table>
+            <tr class="title">
+                <td>Full name</td>
+                <td>Age</td>
+                <td>Job title</td>
+                <td>Favorite meal</td>
+            </tr>
+            <tr class="color">
+                <td>Corey Ander</td>
+                <td>26</td>
+                <td>Restuarant Manager</td>
+                <td>Tagine</td>
+            </tr>
+            <tr>
+                <td>Kerry Oki</td>
+                <td>42</td>
+                <td>Sound Engineer</td>
+                <td>Shepherd's pie</td>
+            </tr>
+            <tr class="color">
+                <td>Levy Tate</td>
+                <td>32</td>
+                <td>Therapist</td>
+                <td>Chocolate brownie</td>
+            </tr>
+            <tr>
+                <td>Miles A.Head</td>
+                <td>34</td>
+                <td>Mechanic</td>
+                <td>Pizza</td>
+            </tr>
+            <tr class="color">
+                <td>Upton O.Goode</td>
+                <td>59</td>
+                <td>Counselor</td>
+                <td>Mac 'n' cheese</td>
+            </tr>
+        </table>
+    </div>
+    <!-- end table -->
+    <!-- code form -->
+    <div class="form">
+        <span>Đăng ký thành viên</span>
+        <form action="" method="POST" enctype="multipart/form-data">
+            <table class="border">
+                <tr>
+                    <th class="border">Nội dung</th>
+                    <th class="border">Giá trị</th>
+                </tr>
+                <tr>
+                    <td class="border">
+                        <label>Họ tên:</label>
+                    </td>
+                    <td class="border">
+                        <input type="text" name="name" />
+                    </td>
+                </tr>
+                <tr>
+                    <td class="border">
+                        <label>Email:</label>
+                    </td>
+                    <td class="border">
+                        <input type="email" name="email" />
+                    </td>
+                </tr>
+                <tr>
+                    <td class="border">
+                        <label>Mật khẩu:</label>
+                    </td>
+                    <td class="border">
+                        <input type="password" name="password" />
+                    </td>
+                </tr>
+                <tr>
+                    <td class="border">
+                        <label>Avatar:</label>
+                    </td>
+                    <td class="border">
+                        <input type="file" name="avatar" accept="image/*" />
+                    </td>
+                </tr>
+                <tr>
+                    <td class="border">
+                        <label>Số điện thoại:</label>
+                    </td>
+                    <td class="border">
+                        <input type="number" name="tel" />
+                    </td>
+                </tr>
+                <tr>
+                    <td class="border">
+                        <label>Tuổi:</label>
+                    </td>
+                    <td class="border">
+                        <select id="age" name="age">
+                            <option>10 tuổi</option>
+                            <option selected >11 tuổi</option>
+                            <option selected >12 tuổi</option>
+                            <option>13 tuổi</option>
+                          </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="border">
+                        <label>Giới tính:</label>
+                    </td>
+                    <td class="border">
+                        <input type="radio" name="sex" /> Nam <br />
+                        <input type="radio" name="sex" checked="checked" value="famale" /> Nữ
+                    </td>
+                </tr>
+                <tr>
+                    <td class="border">Sở thích:</td>
+                    <td class="border">
+                        <input type="checkbox" /> Đá bóng <br />
+                        <input type="checkbox" /> Cầu lông <br />
+                        <input type="checkbox" /> Đua thuyền
+                    </td>
+                </tr>
+                <tr>
+                    <td class="border">Ghi chú:</td>
+                    <td class="border">
+                        <textarea name="box" cols="18" rows="2">Buổi học đầu tiên về HTML</textarea>
+                    </td>
+                </tr>
+            </table>
+            <input type="submit" value="Đăng ký">
+        </form>
+    </div>
+    <!-- end form -->
+</body>
+
+</html>
