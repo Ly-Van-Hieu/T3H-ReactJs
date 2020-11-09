@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.table {
+    width: 400px;
+    height: 300px;
+    margin: 50px auto;
+    overflow: scroll;
+}
+
+table {
+    width: 680px;
+    border-collapse: collapse;
+}
+
+table,
+th,
+td {
+    border: 1px solid #dfe2e6;
+}
+
+th,
+td {
+    padding: 10px;
+}
+
+td:last-child {
+    font-weight: bold;
+}
+
+tr:first-child {
+    background-image: linear-gradient(to right, #8f4882, #69818e);
+    color: #fff;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+img {
+    width: 10px;
+    margin-left: 5px;
+}
