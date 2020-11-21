@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #f1f1f1;
+    font-family: 'Dancing Script', cursive;
+}
+
+.card-container {
+    margin: 50px auto;
+    position: relative;
+    width: 420px;
+    height: 510px;
+    background-color: #fafafa;
+    opacity: 0.5;
+    z-index: 1;
+}
+
+.card {
+    width: 100%;
+    height: 100%;
+    background-color: #fafafa;
+    padding: 15px;
+    box-sizing: border-box;
+    position: absolute;
+}
+
+.card img {
+    width: 100%;
+    height: 85%;
+}
+
+.card p {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.card__img--berlin {
+    transform: rotate(-10deg);
+    top: 120%;
+    left: 50%;
+}
+
+.card__img--london {
+    transform: rotate(0deg);
+    top: 0;
+    left: 0;
+}
+
+.card__img--angeles {
+    transform: rotate(-10deg);
+    left: -20%;
+    top: 80%;
+}
+
+.card__img--italy {
+    transform: rotate(10deg);
+    top: 40%;
+    left: 60%;
+}
+
+.card-container:hover {
+    opacity: 1;
+}
+
+.card:hover {
+    transform: rotate(0deg);
+    z-index: 2;
+    opacity: 1;
+}
