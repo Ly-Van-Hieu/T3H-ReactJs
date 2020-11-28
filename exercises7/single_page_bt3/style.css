@@ -1,0 +1,263 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.header {
+    background-color: #4E5366;
+    color: white;
+}
+
+.header .menu {
+    justify-content: space-between;
+    padding: 50px 0;
+}
+
+.header .menu .menu__left a:last-child::before {
+    content: "|";
+    font-size: 1rem;
+    padding-left: 5px;
+    padding-right: 8px;
+}
+
+.header .menu__right i {
+    padding-left: 10px;
+}
+
+.row,
+[class^="col"] {
+    margin: 0;
+    padding: 0;
+}
+
+.header .row .col-sm-5 .col-sm-12:first-child {
+    background-color: #4DAAAF;
+    height: 50%;
+}
+
+.header .row .col-sm-5 .col-sm-12:last-child {
+    background-color: #6AC8AE;
+    height: 50%;
+}
+
+.header .row .col-sm-7 img {
+    width: 100%;
+}
+
+.header .row .content {
+    padding: 60px;
+}
+
+.btn {
+    border-radius: 50px;
+    padding: 10px 30px;
+}
+
+.main {
+    background-color: #575B74;
+}
+
+.main .row__content {
+    padding: 0 80px;
+}
+
+.main .row__content [class^="col"] {
+    padding: 40px;
+    border: 0;
+    border-bottom: 1px solid #dfdfdf;
+    margin: 0px 0;
+}
+
+.main .row__content [class^="col"]:last-child {
+    border: 0;
+}
+
+.main .row__content .rounded-circle {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 1px solid #dfdfdf;
+}
+
+.main .row__content .camera {
+    color: #42abae;
+}
+
+.main .row__content .telegram {
+    color: #63c1a6;
+}
+
+.main .row__content .envelope {
+    color: #ffd18d;
+}
+
+.main .row__content .rounded-circle i {
+    font-size: 25px;
+}
+
+.main .row__slider {
+    padding: 80px 0;
+}
+
+.main .aliquam {
+    padding: 50px 80px;
+}
+
+.footer {
+    background-color: #4e5366;
+}
+
+input#email {
+    width: 65%;
+    float: left;
+    padding-left: 10px;
+    margin-bottom: 50px;
+    height: 40px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border: none;
+}
+
+.footer button {
+    background-color: #5cb7bc;
+    font-size: 11px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    height: 40px;
+}
+
+.footer button:hover {
+    background-color: #37c5ca;
+    color: #ffffff;
+}
+
+.footer .footer__information {
+    width: 100%;
+    padding: 50px 0;
+}
+
+.footer .footer__information [class^="col"] {
+    padding: 20px 0;
+    border-bottom: 1px solid #dfdfdf;
+}
+
+.footer .footer__information [class^="col"]:nth-child(odd) {
+    border-right: 1px solid #dfdfdf;
+}
+
+.footer .footer__information [class^="col"]:nth-last-of-type(2) {
+    border-bottom: none;
+}
+
+.footer .footer__information [class^="col"] ul li {
+    padding-top: 20px;
+}
+
+.footer .footer__information [class^="col"]:last-child {
+    border: 0;
+}
+
+.footer .footer__contact {
+    width: 100%;
+}
+
+.footer .footer__contact .col-12 {
+    flex-direction: column;
+    text-align: center;
+}
+
+.footer .footer__contact .item {
+    padding: 20px;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.align-items {
+    align-items: center;
+}
+
+.color-white {
+    color: white;
+}
+
+.color-gray {
+    color: #9A9FB2;
+    font-size: 12px;
+}
+
+.bg-white {
+    background-color: #ffffff;
+}
+
+.bg-orange {
+    background-color: #ffd586;
+}
+
+.bg-footer {
+    background-color: #4DAAAF;
+}
+
+.border-none {
+    border: none;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.d-flex-row {
+    display: flex;
+    flex-direction: column;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+
+.btn-dark {
+    background-color: #575C72;
+}
+
+.p-top-bottom {
+    padding: 50px 0;
+}
+
+a:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+    /* height: 100%; */
+}
+
+ul {
+    list-style-type: none;
+}
+
+@media (min-width: 768px) {
+    .row-reverse {
+        flex-direction: row-reverse;
+    }
+    .main .row__content [class^="col"] {
+        padding: 40px;
+        border: 0;
+        border-right: 1px solid #dfdfdf;
+        margin: 80px 0;
+    }
+    .footer .footer__information [class^="col"] {
+        padding: 20px 0;
+        border: 0;
+        border-right: 1px solid #dfdfdf;
+    }
+    .footer .footer__contact .col-12 {
+        flex-direction: row;
+        justify-content: center;
+    }
+}
