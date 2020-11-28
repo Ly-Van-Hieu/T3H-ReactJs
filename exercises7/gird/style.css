@@ -1,0 +1,80 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #1c1c1c;
+}
+
+.title {
+    width: 1000px;
+    height: 50px;
+    margin: 5px auto;
+    background-color: #ffffff;
+}
+
+.gird {
+    width: 1000px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: repeat(7, 130px);
+    grid-template-rows: repeat(17, 130px);
+    grid-gap: 10px;
+    grid-area: auto;
+    justify-content: space-around;
+    color: #a4a6a5;
+}
+
+.gird__items {
+    border-radius: 5px;
+    box-sizing: border-box;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+.gird__items:nth-child(odd) {
+    background-color: #424242;
+}
+
+.gird__items:nth-child(even) {
+    background-color: #343434;
+}
+
+.col-2 {
+    grid-column: span 2;
+}
+
+.col-3 {
+    grid-column: span 3;
+}
+
+.row-4 {
+    grid-row: span 4;
+}
+
+.row-2 {
+    grid-row: span 2;
+}
+
+.area-row1-col7 {
+    grid-area: 1 / 7;
+}
+
+.area-row3-col7 {
+    grid-area: 3 / 7;
+}
+
+.area-row4-col7 {
+    grid-area: 4 / 7;
+}
+
+.area-row5-col7 {
+    grid-area: 5 / 7;
+}
+
+.area-row6 {
+    grid-area: 6;
+}
