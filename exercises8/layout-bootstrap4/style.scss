@@ -1,0 +1,212 @@
+.header {
+    background-color: #4E5366;
+    color: white;
+    .menu {
+        padding: 50px 0;
+        justify-content: space-between;
+        .menu__left {
+            a {
+                color: white;
+                text-decoration: none;
+            }
+            a:first-child::after {
+                content: "";
+                padding-left: 10px;
+                margin-right: 5px;
+                border-right: 1px solid #9fa5b5;
+            }
+            a:last-child {
+                color: #9fa5b5;
+                font-size: 12px;
+            }
+        }
+        .menu__right {
+            span {
+                margin-right: 10px;
+            }
+            i {
+                padding-right: 0;
+            }
+        }
+    }
+    .title {
+        padding: 0;
+        .content {
+            height: 50%;
+            padding: 50px 60px;
+        }
+        .sed-lorem {
+            background-color: #4daaaf;
+            h2,
+            p {
+                padding: 10px;
+            }
+            .btn {
+                background-color: #5cb7bc;
+            }
+        }
+        .amet-magna {
+            background-color: #6ac8ae;
+            h2,
+            p {
+                padding: 10px;
+            }
+            .btn {
+                background-color: #79d1b9;
+            }
+        }
+    }
+    .image {
+        padding: 0;
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
+.main {
+    background-color: #575b74;
+    margin-top: -1px;
+    .title {
+        padding-top: 80px;
+        padding-bottom: 20px;
+    }
+    .lorem-ipsum-dolor {
+        background-color: white;
+        .content {
+            padding: 0 80px;
+            [class^="col"] {
+                padding: 40px;
+                border: 0;
+                border-bottom: 1px solid #dfdfdf;
+                margin: 0px 0;
+            }
+            [class^="col"]:last-child {
+                border: 0;
+            }
+            .rounded-circle {
+                width: 80px;
+                height: 80px;
+                border-radius: 50%;
+                border: 1px solid #dfdfdf;
+            }
+            .camera {
+                color: #42abae;
+            }
+            .telegram {
+                color: #63c1a6;
+            }
+            .envelope {
+                color: #ffd18d;
+            }
+        }
+    }
+    .slider {
+        background-color: #ffd586;
+    }
+    .sed-tempus-aliquam {
+        background-color: white;
+        .content {
+            padding: 0 50px 50px 50px;
+        }
+        [class^="col"] {
+            padding: 0;
+        }
+        img {
+            width: 100%;
+            height: 100%;
+        }
+        .aliquam {
+            padding: 50px 80px;
+        }
+    }
+}
+
+.footer {
+    background-color: #4e5366;
+    color: white;
+    input[type="text"] {
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+    }
+    button {
+        background-color: #5cb7bc;
+        font-size: 11px;
+        font-weight: bold;
+        color: white;
+    }
+    button:hover {
+        background-color: #37c5ca;
+        color: #ffffff;
+    }
+    .footer__information {
+        width: 100%;
+        padding: 50px 0;
+        [class^="col"] {
+            padding: 20px 0;
+            border-bottom: 1px solid #dfdfdf;
+            ul li {
+                padding-top: 20px;
+            }
+        }
+        [class^="col"]:nth-child(odd) {
+            border-right: 1px solid #dfdfdf;
+        }
+        [class^="col"]:nth-last-of-type(2) {
+            border-bottom: none;
+        }
+        [class^="col"]:last-child {
+            border: 0;
+        }
+    }
+    .footer__contact {
+        width: 100%;
+        .contact {
+            flex-direction: column;
+            align-items: center;
+        }
+        .item {
+            padding: 20px;
+        }
+    }
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.color-gray {
+    color: #bbbbbb;
+}
+
+.btn {
+    padding: 10px 30px;
+    border-radius: 50px;
+    border: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+@media (min-width: 768px) {
+    .row-reverse {
+        flex-direction: row-reverse;
+    }
+    .main .lorem-ipsum-dolor .content [class^="col"] {
+        padding: 40px;
+        border: 0;
+        border-right: 1px solid #dfdfdf;
+        margin: 80px 0;
+    }
+    .footer .footer__information [class^="col"] {
+        padding: 20px 0;
+        border: 0;
+        border-right: 1px solid #dfdfdf;
+    }
+    .footer .footer__contact .contact {
+        flex-direction: row;
+        justify-content: center;
+    }
+}

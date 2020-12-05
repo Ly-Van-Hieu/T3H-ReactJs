@@ -1,0 +1,267 @@
+.header {
+    background-color: #4E5366;
+    color: white;
+}
+
+.header .menu {
+    padding: 50px 0;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.header .menu .menu__left a {
+    color: white;
+    text-decoration: none;
+}
+
+.header .menu .menu__left a:first-child::after {
+    content: "";
+    padding-left: 10px;
+    margin-right: 5px;
+    border-right: 1px solid #9fa5b5;
+}
+
+.header .menu .menu__left a:last-child {
+    color: #9fa5b5;
+    font-size: 12px;
+}
+
+.header .menu .menu__right span {
+    margin-right: 10px;
+}
+
+.header .menu .menu__right i {
+    padding-right: 0;
+}
+
+.header .title {
+    padding: 0;
+}
+
+.header .title .content {
+    height: 50%;
+    padding: 50px 60px;
+}
+
+.header .title .sed-lorem {
+    background-color: #4daaaf;
+}
+
+.header .title .sed-lorem h2,
+.header .title .sed-lorem p {
+    padding: 10px;
+}
+
+.header .title .sed-lorem .btn {
+    background-color: #5cb7bc;
+}
+
+.header .title .amet-magna {
+    background-color: #6ac8ae;
+}
+
+.header .title .amet-magna h2,
+.header .title .amet-magna p {
+    padding: 10px;
+}
+
+.header .title .amet-magna .btn {
+    background-color: #79d1b9;
+}
+
+.header .image {
+    padding: 0;
+}
+
+.header .image img {
+    width: 100%;
+    height: 100%;
+}
+
+.main {
+    background-color: #575b74;
+    margin-top: -1px;
+}
+
+.main .title {
+    padding-top: 80px;
+    padding-bottom: 20px;
+}
+
+.main .lorem-ipsum-dolor {
+    background-color: white;
+}
+
+.main .lorem-ipsum-dolor .content {
+    padding: 0 80px;
+}
+
+.main .lorem-ipsum-dolor .content [class^="col"] {
+    padding: 40px;
+    border: 0;
+    border-bottom: 1px solid #dfdfdf;
+    margin: 0px 0;
+}
+
+.main .lorem-ipsum-dolor .content [class^="col"]:last-child {
+    border: 0;
+}
+
+.main .lorem-ipsum-dolor .content .rounded-circle {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 1px solid #dfdfdf;
+}
+
+.main .lorem-ipsum-dolor .content .camera {
+    color: #42abae;
+}
+
+.main .lorem-ipsum-dolor .content .telegram {
+    color: #63c1a6;
+}
+
+.main .lorem-ipsum-dolor .content .envelope {
+    color: #ffd18d;
+}
+
+.main .slider {
+    background-color: #ffd586;
+}
+
+.main .sed-tempus-aliquam {
+    background-color: white;
+}
+
+.main .sed-tempus-aliquam .content {
+    padding: 0 50px 50px 50px;
+}
+
+.main .sed-tempus-aliquam [class^="col"] {
+    padding: 0;
+}
+
+.main .sed-tempus-aliquam img {
+    width: 100%;
+    height: 100%;
+}
+
+.main .sed-tempus-aliquam .aliquam {
+    padding: 50px 80px;
+}
+
+.footer {
+    background-color: #4e5366;
+    color: white;
+}
+
+.footer input[type="text"] {
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.footer button {
+    background-color: #5cb7bc;
+    font-size: 11px;
+    font-weight: bold;
+    color: white;
+}
+
+.footer button:hover {
+    background-color: #37c5ca;
+    color: #ffffff;
+}
+
+.footer .footer__information {
+    width: 100%;
+    padding: 50px 0;
+}
+
+.footer .footer__information [class^="col"] {
+    padding: 20px 0;
+    border-bottom: 1px solid #dfdfdf;
+}
+
+.footer .footer__information [class^="col"] ul li {
+    padding-top: 20px;
+}
+
+.footer .footer__information [class^="col"]:nth-child(odd) {
+    border-right: 1px solid #dfdfdf;
+}
+
+.footer .footer__information [class^="col"]:nth-last-of-type(2) {
+    border-bottom: none;
+}
+
+.footer .footer__information [class^="col"]:last-child {
+    border: 0;
+}
+
+.footer .footer__contact {
+    width: 100%;
+}
+
+.footer .footer__contact .contact {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.footer .footer__contact .item {
+    padding: 20px;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.color-gray {
+    color: #bbbbbb;
+}
+
+.btn {
+    padding: 10px 30px;
+    border-radius: 50px;
+    border: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+@media (min-width: 768px) {
+    .row-reverse {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+        flex-direction: row-reverse;
+    }
+    .main .lorem-ipsum-dolor .content [class^="col"] {
+        padding: 40px;
+        border: 0;
+        border-right: 1px solid #dfdfdf;
+        margin: 80px 0;
+    }
+    .footer .footer__information [class^="col"] {
+        padding: 20px 0;
+        border: 0;
+        border-right: 1px solid #dfdfdf;
+    }
+    .footer .footer__contact .contact {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+    }
+}
+/*# sourceMappingURL=style.css.map */
