@@ -46,8 +46,7 @@ function sortArray (array) {
 
 // exercise 6
 function checkObject (object) {
-  const check = typeof(object) === 'object' && !Array.isArray(object)? true : false
-  return check
+  return typeof(object) === 'object' && !Array.isArray(object)
 }
 
 // exercise 7
