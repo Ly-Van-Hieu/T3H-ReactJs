@@ -1,63 +1,47 @@
-// exercise 1: Viết 1 hàm trả về 1 array, nhận vào 2 tham số, tham số thứ 1 là ký tự cần lặp, tham số thứ 2 là số lần lặp
-//cách 1
-function returnArray (charRepeat, numberRepeat) {
-  if (typeof numberRepeat === 'number' && numberRepeat > 0) {
-    const array = []
-    for (let i = 1; i <= numberRepeat; i ++) {
-      array.push(charRepeat)
-    }
-    return array
+// exercise 1
+function repeat (word, times) {
+  const array = []
+  for (let i = 1; i <= times; i ++) {
+    array.push(word)
   }
-  return 'số lần lặp phải là kiểu số và lớn hơn 0'
+  return array
 }
 
 // exercise 2
 function reverseArray (array) {
-  if (Array.isArray(array)) {
-    for (let i = 0; i < array.length/2; i ++) {
-      const provisional = array[i]
-      array[i] = array[array.length-1-i]
-      array[array.length-1-i] = provisional
-    }
-    return array
+  const newArr = []
+  for (let i = array.length - 1; i >= 0; i --) {
+    newArr.push(array[i])
   }
-  return 'Dữ liệu nhập vào phải là dạng mảng'
+  return newArr
 }
 
 // exercise 3
 function deleteElementFalse (array) {
-  if (Array.isArray(array)) {
-    return array.filter(value => Boolean(value));
-  }
-  return 'Dữ liệu nhập vào phải là dạng mảng'
+  return array.filter(value => Boolean(value));
 }
 
 // exercise 4
 function createObject (data) {
   const obj = {}
   data.forEach(value => {
-    for (let i = 0; i < value.length/2; i ++) {
-      obj[value[2*i]] = value[2*i+1]
-    }
+    obj[value[0]] = value[1]
   })
   return obj
 }
 
 // exercise 5
 function sortArray (array) {
-  if (Array.isArray(array)) {
-    for (let i = 0; i < array.length - 1; i ++) {
-      for (let j = i + 1; j < array.length; j++) {
-          if (array[i] > array[j]) {
-            const provisional = array[i]
-            array[i] = array[j]
-            array[j] = provisional      
-          }
-      }
+  for (let i = 0; i < array.length - 1; i ++) {
+    for (let j = i + 1; j < array.length; j++) {
+        if (array[i] > array[j]) {
+          const provisional = array[i]
+          array[i] = array[j]
+          array[j] = provisional      
+        }
     }
-    return array
   }
-  return 'Dữ liệu nhập vào phải là dạng mảng'
+  return array
 }
 
 // exercise 6
@@ -67,24 +51,23 @@ function checkObject (object) {
 }
 
 // exercise 7
-function getKeyAndValue (...keyInput) {
-  const obj = { a: 1, b: 2, c: 3, d: 4 }
-  for (let i = 0; i < keyInput.length; i ++) {
-    for (let key in obj) {
-      if (keyInput[i] === key) {
-        delete obj[key]
+function getKeyAndValue (object, ...keyDelete) {
+  for (let i = 0; i < keyDelete.length; i ++) {
+    for (let key in object) {
+      if (keyDelete[i] === key) {
+        delete object[key]
       }
     }
   }
-  return obj
+  return object
 }
 
 // exercise 8
-function deleteElement (...array) {
-  if(array.length <= 5) {
+function deleteElement (array) {
+  if (array.length <= 5) {
     return 'mảng nhập vào phải có nhiều hơn 5 phần tử'
-  }else {
-    return array.splice(2,2)
+  } else {
+    return array.splice(2, 2)
   }
 }
 
