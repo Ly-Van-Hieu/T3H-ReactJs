@@ -59,6 +59,7 @@ function checkEmail (email) {
   const regexp = /^[a-z][a-z0-9_\.]+@[a-z0-9]+(\.[a-z0-9]+)+$/g
   return Boolean (email.match(regexp) && !email.match(/__/g) && !email.match(/\.\./g))
 }
+
 // exercise 7
 function checkUserName (userName) {
   const regexp = /^[a-z][a-z0-9_]{1,9}$/g
