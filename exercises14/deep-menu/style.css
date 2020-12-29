@@ -1,0 +1,179 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #eeeeee;
+}
+
+body .menu {
+    width: 200px;
+    margin-left: 100px;
+    margin-top: 50px;
+}
+
+body .menu ul {
+    list-style: none;
+    width: 200px;
+}
+
+body .menu ul li {
+    background-color: white;
+    display: block;
+    margin-bottom: 1px;
+    position: relative;
+}
+
+body .menu ul li a {
+    text-decoration: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 80px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    color: #777777;
+    padding-top: 20px;
+}
+
+body .menu ul li a:hover {
+    color: #E57D23;
+}
+
+body .menu ul li a .icon {
+    font-size: 20px;
+    margin-right: 10px;
+    margin-left: 20px;
+}
+
+body .menu ul li a .text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+body .menu ul li a .text .title {
+    font-weight: bold;
+}
+
+body .menu ul li .menu-in-blog {
+    width: 200px;
+    position: absolute;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    border-left: 5px solid #E57D23;
+    display: none;
+    left: 100%;
+    top: 0;
+}
+
+body .menu ul li .menu-in-blog::before {
+    content: "";
+    border: 5px solid transparent;
+    border-right: 5px solid #E57D23;
+    position: absolute;
+    top: 35px;
+    left: -15px;
+}
+
+body .menu ul li .menu-in-blog li {
+    background-color: white;
+    margin-bottom: 1px;
+    height: 60px;
+}
+
+body .menu ul li .menu-in-blog li .menu-in-our-team {
+    width: 200px;
+    position: absolute;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    border-left: 5px solid #E57D23;
+    display: none;
+    left: 100%;
+    top: 0;
+}
+
+body .menu ul li .menu-in-blog li .menu-in-our-team::before {
+    content: "";
+    border: 5px solid transparent;
+    border-right: 5px solid #E57D23;
+    position: absolute;
+    top: 25px;
+    left: -15px;
+}
+
+body .menu ul li .menu-in-blog li .menu-in-our-team li {
+    background-color: white;
+    margin-bottom: 1px;
+    height: 60px;
+}
+
+body .menu ul li .menu-in-blog li .menu-in-our-team li .menu-in-gleb-ismailov {
+    width: 200px;
+    position: absolute;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    border-left: 5px solid #E57D23;
+    display: none;
+    left: 100%;
+    top: 0;
+}
+
+body .menu ul li .menu-in-blog li .menu-in-our-team li .menu-in-gleb-ismailov::before {
+    content: "";
+    border: 5px solid transparent;
+    border-right: 5px solid #E57D23;
+    position: absolute;
+    top: 25px;
+    left: -15px;
+}
+
+body .menu ul li .menu-in-blog li .menu-in-our-team li .menu-in-gleb-ismailov li {
+    background-color: white;
+    margin-bottom: 1px;
+    height: 60px;
+}
+
+body .menu ul li .menu-in-blog li .menu-in-our-team li:hover .menu-in-gleb-ismailov {
+    display: block;
+}
+
+body .menu ul li .menu-in-blog li:hover .menu-in-our-team {
+    display: block;
+}
+
+body .menu ul li:hover .menu-in-blog {
+    display: block;
+}
+
+body .menu ul .active {
+    border-left: 5px solid #E57D23;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    border-right: 5px solid #E57D23;
+    -webkit-transform: scaleX(1.05);
+    transform: scaleX(1.05);
+    position: relative;
+}
+
+body .menu ul .active::before {
+    content: "";
+    border: 5px solid transparent;
+    border-left: 5px solid #E57D23;
+    position: absolute;
+    top: 35px;
+}
+
+body .menu ul .active::after {
+    content: "";
+    border: 5px solid transparent;
+    border-right: 5px solid #E57D23;
+    position: absolute;
+    top: 35px;
+    right: 0;
+}

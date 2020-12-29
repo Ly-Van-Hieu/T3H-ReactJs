@@ -1,0 +1,11 @@
+#shallow-menu, #shallow-menu-node ul ul {
+    display: none;
+}
+
+#shallow-menu, #shallow-menu-node span.arrow {
+    display: inline-block;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    background-color: red;
+}
