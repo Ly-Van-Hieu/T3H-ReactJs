@@ -1,0 +1,62 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#shallow-menu ul {
+  list-style: none;
+}
+
+#shallow-menu a {
+  text-decoration: none;
+  font-size: 25px;
+  color: white;
+}
+
+#shallow-menu .shallow-list {
+  width: 400px;
+  margin: 0 auto;
+  background-color: #2a394f;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+#shallow-menu .shallow-list .shallow-item .parent-menu {
+  display: block;
+  padding: 50px;
+  position: relative;
+}
+
+#shallow-menu .shallow-list .shallow-item .parent-menu:hover {
+  border-bottom: 4px solid #355789;
+  background-color: #222e41;
+}
+
+#shallow-menu .shallow-list .shallow-item .parent-menu i {
+  color: white;
+  padding-right: 20px;
+}
+
+#shallow-menu .shallow-list .shallow-item .parent-menu .arrow {
+  float: right;
+  cursor: pointer;
+}
+
+#shallow-menu .shallow-list .shallow-item .parent-menu .arrow i {
+  padding: 0;
+}
+
+#shallow-menu .shallow-list .shallow-item .sub-shallow {
+  background-color: #16a4f9;
+  display: none;
+}
+
+#shallow-menu .shallow-list .shallow-item .sub-shallow .child-menu {
+  padding: 50px;
+}
+
+#shallow-menu .shallow-list .shallow-item .sub-shallow .child-menu:hover {
+  background-color: #0c93e3;
+  border-left: 6px solid #146ca1;
+}
+/*# sourceMappingURL=style.css.map */

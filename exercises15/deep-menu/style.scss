@@ -1,0 +1,143 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #eeeeee;
+  .menu {
+    width: 200px;
+    margin-left: 100px;
+    margin-top: 50px;
+    ul {
+      list-style: none;
+      width: 200px;
+      li {
+        background-color: white;
+        display: block;
+        margin-bottom: 1px;
+        position: relative;
+        a {
+          text-decoration: none;
+          display: flex;
+          height: 80px;
+          box-sizing: border-box;
+          color: #777777;
+          padding-top: 20px;
+          &:hover {
+            color: #E57D23;
+          }
+          .icon {
+            font-size: 20px;
+            margin-right: 10px;
+            margin-left: 20px;
+          }
+          .text {
+            display: flex;
+            flex-direction: column;
+            .title {
+              font-weight: bold;
+            }
+          }
+        }
+        .menu-in-blog {
+          width: 200px;
+          position: absolute;
+          box-sizing: border-box;
+          border-left: 5px solid #E57D23;
+          display: none;
+          left: 100%;
+          top: 0;
+          &::before {
+              content: "";
+              border: 5px solid transparent;
+              border-right: 5px solid #E57D23;
+              position: absolute;
+              top: 35px;
+              left: -15px;
+          }
+          li {
+              background-color: white;
+              margin-bottom: 1px;
+              height: 60px;
+              .menu-in-our-team {
+                width: 200px;
+                position: absolute;
+                box-sizing: border-box;
+                border-left: 5px solid #E57D23;
+                display: none;
+                left: 100%;
+                top: 0;
+                &::before {
+                  content: "";
+                  border: 5px solid transparent;
+                  border-right: 5px solid #E57D23;
+                  position: absolute;
+                  top: 25px;
+                  left: -15px;
+                }
+                li {
+                  background-color: white;
+                  margin-bottom: 1px;
+                  height: 60px;
+                  .menu-in-gleb-ismailov {
+                    width: 200px;
+                    position: absolute;
+                    box-sizing: border-box;
+                    border-left: 5px solid #E57D23;
+                    display: none;
+                    left: 100%;
+                    top: 0;
+                    &::before {
+                      content: "";
+                      border: 5px solid transparent;
+                      border-right: 5px solid #E57D23;
+                      position: absolute;
+                      top: 25px;
+                      left: -15px;
+                    }
+                    li {
+                      background-color: white;
+                      margin-bottom: 1px;
+                      height: 60px;
+                    }
+                  }
+                  &:hover .menu-in-gleb-ismailov {
+                      display: block;
+                  }
+              }
+            }
+            &:hover .menu-in-our-team {
+                display: block;
+            }
+          }
+        }
+        &:hover .menu-in-blog {
+          display: block;
+        }
+      }
+      .active {
+        border-left: 5px solid #E57D23;
+        box-sizing: border-box;
+        border-right: 5px solid #E57D23;
+        transform: scaleX(1.05);
+        position: relative;
+        &::before {
+          content: "";
+          border: 5px solid transparent;
+          border-left: 5px solid #E57D23;
+          position: absolute;
+          top: 35px
+        }
+        &::after {
+          content: "";
+          border: 5px solid transparent;
+          border-right: 5px solid #E57D23;
+          position: absolute;
+          top: 35px;
+          right: 0;
+        }
+      }
+    }
+  }
+}
