@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <title>Document</title>
+</head>
+<body>
+  <div class="container">
+    <div class="select-all">
+        <button type="button" class="btn btn-primary">Add</button>
+        <button type="button" class="btn btn-danger">Delete</button>
+    </div>
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th><input type="checkbox"></th>
+          <th>ID</th>
+          <th>Full Name</th>
+          <th>Gender</th>
+          <th>Age</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><input type="checkbox"></td>
+          <td class="id">1</td>
+          <td class="name">Nguyễn Văn Nam</td>
+          <td class="gender">Nữ</td>
+          <td class="age">12</td>
+          <td>
+            <button type="button" class="btn btn-primary edit" onclick="edit(this)">Edit</button>
+            <button type="button" class="btn btn-success save" onclick="save(this)">Save</button>
+            <button type="button" class="btn btn-warning cancel" onclick="cancel(this)">Cancel</button>
+            <button type="button" class="btn btn-danger delete">Delete</button>
+          </td>
+        </tr>
+        <tr>
+          <td><input type="checkbox"></td>
+          <td class="id">2</td>
+          <td class="name">Nguyễn Thị Nữ</td>
+          <td class="gender">Nam</td>
+          <td class="age">16</td>
+          <td>
+            <button type="button" class="btn btn-primary edit" onclick="edit(this)">Edit</button>
+            <button type="button" class="btn btn-success save" onclick="save(this)">Save</button>
+            <button type="button" class="btn btn-warning cancel" onclick="cancel(this)">Cancel</button>
+            <button type="button" class="btn btn-danger delete">Delete</button>
+          </td>
+        </tr>
+        <tr>
+          <td><input type="checkbox"></td>
+          <td class="id">3</td>
+          <td class="name">Nguyễn Ngọc Duy</td>
+          <td class="gender">Nữ</td>
+          <td class="age">16</td>
+          <td>
+            <button type="button" class="btn btn-primary edit" onclick="edit(this)">Edit</button>
+            <button type="button" class="btn btn-success save" onclick="save(this)">Save</button>
+            <button type="button" class="btn btn-warning cancel" onclick="cancel(this)">Cancel</button>
+            <button type="button" class="btn btn-danger delete">Delete</button>
+          </td>
+        </tr>
+        <tr>
+          <td><input type="checkbox"></td>
+          <td class="id">6</td>
+          <td class="name">Nguyễn Thị Duy</td>
+          <td class="gender">Nam</td>
+          <td class="age">15</td>
+          <td>
+            <button type="button" class="btn btn-primary edit" onclick="edit(this)">Edit</button>
+            <button type="button" class="btn btn-success save" onclick="save(this)">Save</button>
+            <button type="button" class="btn btn-warning cancel" onclick="cancel(this)">Cancel</button>
+            <button type="button" class="btn btn-danger delete">Delete</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <script src="./main.js"></script>
+</body>
+</html>

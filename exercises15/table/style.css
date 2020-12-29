@@ -1,0 +1,21 @@
+div .select-all {
+  margin-top: 50px;
+  height: 50px;
+  padding-left: 10px;
+  padding-bottom: 10px;
+  padding-right: 50px;
+  float: right;
+}
+
+div table .edit {
+  display: inline-block;
+}
+
+div table .save {
+  display: none;
+}
+
+div table .cancel {
+  display: none;
+}
+/*# sourceMappingURL=style.css.map */
